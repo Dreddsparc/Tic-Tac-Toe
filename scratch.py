@@ -5,9 +5,11 @@ root = tk.Tk()
 root.title("Tic-Tac-ToeJam!")
 
 playField = tk.Canvas()
-playField.pack()
-
+playField.grid(row=0, column=0)
 playFieldFont = font.Font(size=10, weight='bold')
+
+playerPanel = tk.Canvas()
+playerPanel.grid(row=0, column=1)
 
 pFSquares = []
 pfHeight = 5
